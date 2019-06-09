@@ -48,20 +48,22 @@ The expected output for `experiment=mb_2cv` is as follows:
 Evaluating results using trec_eval...
 # out/birch/run.mb_2cv.cv.abc
 ###
-map                   	all	0.3244
-P_30                  	all	0.3767
+# out/birch/run.mb_2cv.cv.a
+###
+map                   	all	0.3241
+P_20                  	all	0.4217
 
 ###
 # out/birch/run.mb_2cv.cv.ab
 ###
 map                   	all	0.3240
-P_30                  	all	0.3756
+P_20                  	all	0.4209
 
 ###
-# out/birch/run.mb_2cv.cv.a
+# out/birch/run.mb_2cv.cv.abc
 ###
-map                   	all	0.3241
-P_30                  	all	0.3756
+map                   	all	0.3244
+P_20                  	all	0.4219
 ```
 
 `*.abc` refer to runs where the top 3 sentences are considered, `*.ab` top 2 sentences, and `*.a` top sentence only in addition to the document score.
