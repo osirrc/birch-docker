@@ -2,26 +2,16 @@
 
 echo "Initializing..."
 
-# Clone Anserini
+# Set up Anserini
 git clone https://github.com/castorini/anserini.git
 chmod -R +x anserini
-cd anserini
-mvn clean package appassembler:assemble
-cd eval
-tar xvfz trec_eval.9.0.4.tar.gz && cd trec_eval.9.0.4 && make
-cd ../../..
+cd anserini && mvn clean package appassembler:assemble
+cd eval && tar xvfz trec_eval.9.0.4.tar.gz && cd trec_eval.9.0.4 && make && cd ../../..
 
 # Install Apex
 git clone https://github.com/NVIDIA/apex
-cd apex
-pip install -v --no-cache-dir .
-cd ../birch
+cd apex && pip install -v --no-cache-dir . && cd ..
 
-# Download data
-mkdir -p data/datasets
-curl -o data/datasets/robust04.csv "https://www.googleapis.com/download/storage/v1/b/birch_data/o/datasets%2Frobust04_test.csv?alt=media"
-
-# Download models
-mkdir models
-curl -o models/saved.mb_3 "https://www.googleapis.com/download/storage/v1/b/birch_data/o/birch_models%2Fsaved.mb_3?alt=media"
-curl -o models/saved.qa_2 "https://www.googleapis.com/download/storage/v1/b/birch_data/o/birch_models%2Fsaved.qa_2?alt=media"
+# Download data and models
+wget https://zenodo.org/record/3241945/files/birch_data.tar.gz
+tar -xzvf birch_data.tar.gz
