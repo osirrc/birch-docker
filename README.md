@@ -3,7 +3,7 @@
 [ ![Docker Build Status](https://img.shields.io/docker/cloud/build/osirrc2019/birch.svg)](https://hub.docker.com/r/osirrc2019/birch)
 [ ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3241945.svg)](https://doi.org/10.5281/zenodo.3241945)
 
-[**Zeynep Akkalyoncu Yilmaz**](https://github.com/zeynepakkalyoncu), [**Wei Yang**](https://github.com/Victor0118), [**Haotian Zhang**](https://github.com/HTAustin), [**Jimmy Lin**](https://github.com/lintool)
+[**Zeynep Akkalyoncu Yilmaz**](https://github.com/zeynepakkalyoncu), [**Wei Yang**](https://github.com/Victor0118), [**Haotian Zhang**](https://github.com/HTAustin) and [**Jimmy Lin**](https://github.com/lintool)
 
 This is the docker image of our implementation of [Birch](https://github.com/castorini/birch) conforming to the [OSIRRC jig](https://github.com/osirrc/jig/) for the [Open-Source IR Replicability Challenge (OSIRRC) at SIGIR 2019](https://osirrc.github.io/osirrc2019/).
 The image is available on [Docker Hub](https://hub.docker.com/r/osirrc2019/birch).
@@ -46,10 +46,11 @@ The expected output for `experiment=mb_2cv` is as follows:
 
 ```
 Evaluating results using trec_eval...
-# out/birch/run.mb_2cv.cv.abc
 ###
-map                   	all	0.3244
-P_30                  	all	0.3767
+# out/birch/run.mb_2cv.cv.a
+###
+map                   	all	0.3241
+P_30                  	all	0.3756
 
 ###
 # out/birch/run.mb_2cv.cv.ab
@@ -57,11 +58,10 @@ P_30                  	all	0.3767
 map                   	all	0.3240
 P_30                  	all	0.3756
 
+# out/birch/run.mb_2cv.cv.abc
 ###
-# out/birch/run.mb_2cv.cv.a
-###
-map                   	all	0.3241
-P_30                  	all	0.3756
+map                   	all	0.3244
+P_30                  	all	0.3767
 ```
 
-`*.abc` refer to runs where the top 3 sentences are considered, `*.ab` top 2 sentences, and `*.a` top sentence only in addition to the document score.
+`*.a` refer to runs where only the top sentence is considered, `*.ab` top 2, and `*.abc` top 3 sentences.
