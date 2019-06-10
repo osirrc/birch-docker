@@ -50,18 +50,18 @@ Evaluating results using trec_eval...
 # out/birch/run.mb_2cv.cv.a
 ###
 map                   	all	0.3241
-P_30                  	all	0.3756
+P_20                  	all	0.4217
 
 ###
 # out/birch/run.mb_2cv.cv.ab
 ###
 map                   	all	0.3240
-P_30                  	all	0.3756
+P_20                  	all	0.4209
 
 # out/birch/run.mb_2cv.cv.abc
 ###
 map                   	all	0.3244
-P_30                  	all	0.3767
+P_20                  	all	0.4219
 ```
 
 `*.a` refer to runs where only the top sentence is considered, `*.ab` top 2, and `*.abc` top 3 sentences.
