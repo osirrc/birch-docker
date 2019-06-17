@@ -65,4 +65,4 @@ P_20                  	all	0.4219
 `*.a` refer to runs where only the top sentence is considered, `*.ab` top 2, and `*.abc` top 3 sentences.
 
 ## Reviews
-+ Documentation reviewed at commit [`4fcfe3c`](https://github.com/osirrc/birch-docker/commit/98592166cd06bc3d483e679c702aa48594fcfe3c) (2019-06-14) by [r-clancy](https://github.com/r-clancy/).
++ Documentation reviewed at commit [`4fcfe3c`](https://github.com/osirrc/birch-docker/commit/98592166cd06bc3d483e679c702aa48594fcfe3c) (2019-06-14) by [Ryan Clancy](https://github.com/r-clancy/).
