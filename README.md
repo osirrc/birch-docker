@@ -1,11 +1,11 @@
-# Birch OSIRRC Docker Image
+# OSIRRC Docker Image for Birch
 
 [ ![Docker Build Status](https://img.shields.io/docker/cloud/build/osirrc2019/birch.svg)](https://hub.docker.com/r/osirrc2019/birch)
 [ ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3241945.svg)](https://doi.org/10.5281/zenodo.3241945)
 
 [**Zeynep Akkalyoncu Yilmaz**](https://github.com/zeynepakkalyoncu), [**Wei Yang**](https://github.com/Victor0118), [**Haotian Zhang**](https://github.com/HTAustin), and [**Jimmy Lin**](https://github.com/lintool)
 
-This is the docker image of our implementation of [Birch](https://github.com/castorini/birch) conforming to the [OSIRRC jig](https://github.com/osirrc/jig/) for the [Open-Source IR Replicability Challenge (OSIRRC) at SIGIR 2019](https://osirrc.github.io/osirrc2019/).
+This is the docker image for [Birch](https://github.com/castorini/birch), a BERT-based experimental IR system, conforming to the [OSIRRC jig](https://github.com/osirrc/jig/) for the [Open-Source IR Replicability Challenge (OSIRRC) at SIGIR 2019](https://osirrc.github.io/osirrc2019/).
 The image is available on [Docker Hub](https://hub.docker.com/r/osirrc2019/birch).
 
 + Supported test collections: `robust04`
